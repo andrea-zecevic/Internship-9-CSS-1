@@ -1,0 +1,126 @@
+.header-wrapper {
+    padding-top: 5px;
+}
+  
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+}
+  
+.masthead-account {
+    list-style: none;
+    display: flex;
+    margin-top: 5px;
+}
+
+.account-item img {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    filter: invert(23%) sepia(94%) saturate(7432%) hue-rotate(347deg) brightness(103%) contrast(101%);
+}
+
+.account-item {
+    display: flex;
+    align-items: center;
+    color: black;
+    margin-right: 15px;
+    gap: 4px;
+    text-decoration: none;
+}
+
+.account-item:hover span{
+    color: #ff0e50;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.main-nav-content {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    padding-left: 100px;
+}
+
+.main-nav-logo {
+    margin-top: 30px;
+    margin-right: 25px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.nav-list li:first-child .nav-item {
+    border-bottom: 4px solid #ff0e50;
+}
+
+.nav-item:hover {
+    border-bottom: 4px solid #ff0e50;
+}
+
+.main-nav-search {
+    align-self: flex-start;
+    margin-left: auto;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.hamburger-icon {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.hamburger-icon span {
+    display: block;
+    height: 3px;
+    background-color: white;
+    transition: background-color 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .top-nav{
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 100;
+        color: white;
+    }
+
+}
