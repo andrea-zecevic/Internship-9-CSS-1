@@ -41,6 +41,7 @@ body {
 
 .main-nav {
     background-color: black;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,7 +110,116 @@ body {
     transition: background-color 0.2s ease-in-out;
 }
 
-@media (max-width: 768px) {
+.global-footer {
+    background-color: #2c0022;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  
+.footer-headings {
+    margin-bottom: 15px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+  
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.footer-links li {
+    margin-bottom: 15px;
+}
+  
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+  
+.footer-about {
+  margin-right: 20px;
+}
+
+.footer-subscription,
+.footer-advertising {
+    margin-right:0px;
+}
+
+.footer-links li a:hover {
+    color: #cec7ca;
+}
+  
+.footer-slategrupu img {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 250px;
+    height: auto;
+}
+  
+.footer-slategrupu,
+.footer-text {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+  
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    list-style: none;
+    max-width: 500px;
+    margin-top: 5px;
+}
+
+.footer-social a {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.footer-social a:hover {
+    color: #cec7ca;
+}
+
+.footer-social a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: #cfcbde ;
+    box-sizing: border-box;
+    display: inline-block;
+    filter: invert(100%);
+}
+  
+.footer-bottom {
+    text-align: end;
+    margin-right: 100px;
+    margin-top: 50px;
+    font-size: 15px;
+    font: bold;
+}
+
+  @media (max-width: 768px) {
     .top-nav{
         display: none;
     }
@@ -123,4 +233,13 @@ body {
         color: white;
     }
 
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .footer-slategrupu {
+        margin-bottom: 20px;
+      }
 }
+  
